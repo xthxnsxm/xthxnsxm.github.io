@@ -1,8 +1,9 @@
 body {
-	background: linear-gradient(-45deg, #e9e9e9, #d4d4d4, #9a9a9a, #707070, #454545);
+	background: linear-gradient(-45deg, #e9e9e9, #d4d4d4, #9a9a9a);
 	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+	animation: gradient 8s ease infinite;
 	height: 100vh;
+  font-family:sans-serif;
 }
 
 @keyframes gradient {
@@ -12,52 +13,85 @@ body {
 	50% {
 		background-position: 100% 50%;
 	}
-	100% {
+  100% {
 		background-position: 0% 50%;
 	}
 }
-/*banner at the top of the screen*/
-.top_banner {
-  display: flex;
-  align-items: center;  
-  justify-content: space-between;
-  border-bottom-style: groove;
-  border-color: black;
+.navbar {
+    display: inline;
+    background-color: rgb(31, 31, 111);
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    color: #f2f2f2;
+    text-decoration: none;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+.title{
+  padding-left: 5%;
+  padding-right: 5%;
 }
-/*main name at the top*/
-h1.title {
-  color: black;
-  font-size: 60px;
-  margin-right: 80px;
-  margin-left: 30px;
-  border-color: black;
-  border-radius: 30px;
+/*banner at the top of the screen*/
+.uoftlink{
+  align-items: center;
+  
+}
+.uoftdiv{
+  display: block;
+  margin-left: 39%;
+  margin-right: auto;
+  width: 50%;
+}
+.uoft{
+  width: 41.3%;
 }
 .github{
-  color: black;
-  background-color: #f7f7f8;
-  margin-left: 80px;
-  margin-right: 30px;
-  border-radius: 25px;
-  border-width: 5px;
-  width: 10%;
-  text-align: center;
-  transition: transform .5s;
-}
-.github:hover{
-  transform: scale(1.2);
-  background-color: lightblue;
+  padding-left: 10%;
+  padding-right: 9.3%;
 }
 div.intro{
-  margin-top: 30px;
+  margin-top: 150px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  text-align: center;
+  margin-bottom: 30px;
 }
 div.section{
+  background-color: white;
+  margin:30px;
+  font-size: 60px;
+  padding: 30px;
+  padding-right: 75px;
+  width: 70%;
+  text-align: center;
+  align-items: center;
+}
+p{
   font-size: 30px;
-  text-align: left;
-  padding: 50px;
+  font-family:'Times New Roman', Times, serif;
+}
+h3{
+  font-size: 75%;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+span.name{
+  color: rgb(31, 31, 111);
+  opacity: 1;
+  font-size: 80px;
+  position: relative;
+  font-weight: bold;
 }
 .marin{
   width: 500px;
@@ -67,34 +101,39 @@ div.section{
 }
 /*properties of the row with 3 columns*/
 div.row {
-  margin-top: 30px;
+  margin-top: 100px;
+  background-image: url(images/utmcampus.jpg  );
   border-radius: 30px;
   border-style: groove;
   border-color: black;
   border-width: 5px;
   text-align: center;
+  max-height: fit-content;
+  text-decoration: none;
 }
 /*text under icons*/
 strong{
   display: block;
   font-size: 24px;
   color: black;
-  border-bottom: black;
 }
 /*column properties*/
 .col {
   position: relative;
   display: inline-block;
   padding: 50px;
-  background: #f7f7f8 ;
+  background: white ;
   border-radius: 30px;
-  margin: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .col:hover span{
   opacity: 1; 
 }
 .col:hover{
-  background-color: lightblue;
+  background-color: rgb(31, 31, 111);
 }
 .col:hover .image{
   transform: translate3d(-50%,100%,0);
@@ -108,7 +147,7 @@ i{
 }
 /*hovered text properties*/
 span{
-  color: black;
+  color: white;
   position: absolute;
   bottom: 85%;
   transform: translate3d(-50%,100%,0);
