@@ -18,11 +18,12 @@ body {
 	}
 }
 .navbar {
-    display: inline;
+    display: flex;
     background-color: rgb(31, 31, 111);
-    position: fixed; /* Set the navbar to fixed position */
+    position: absolute; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
+    justify-content: space-between;
   }
   
   /* Links inside the navbar */

@@ -17,11 +17,12 @@ body{
 	}
 }
 .navbar {
-  display: inline;
+  display: flex;
   background-color: rgb(31, 31, 111);
-  position: fixed; /* Set the navbar to fixed position */
+  position: absolute; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
+  justify-content: space-between;
 }
 
 /* Links inside the navbar */
@@ -96,3 +97,11 @@ span{
     font-size: 25px;
     letter-spacing: -.035em;
   }
+  
+  .inventory_container{
+    text-align: center;
+    margin: 3%;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+

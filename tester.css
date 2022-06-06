@@ -1,0 +1,36 @@
+.banner{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(31, 31, 111);
+    width: 100%;
+    height: fit-content;
+}
+.banner a{
+    text-decoration: none;
+    color: #f2f2f2;
+}
+.banner a:hover{
+    background: #ddd;
+    color: black;
+}
+.name {
+    display: flex;
+    text-align: center;
+    padding-left: 5%;
+}
+
+.uoft{
+    width: 30%;
+}
+
+.uoftlink{
+    display: flex;
+    text-align: center;
+}
+.github{
+    display: flex;
+    text-align: center;
+    padding-right: 5%;
+}
+
+
