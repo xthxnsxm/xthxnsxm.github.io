@@ -74,7 +74,7 @@ div.section{
   font-size: 60px;
   padding: 30px;
   padding-right: 75px;
-  width: 70%;
+  max-width: 30em;
   text-align: center;
   align-items: center;
 }
@@ -95,8 +95,8 @@ span.name{
   font-weight: bold;
 }
 .marin{
-  width: 500px;
-  height: 500px;
+  max-width: 25em;
+
   padding-right: 50px;
   border-radius: 100px;
 }
@@ -109,7 +109,8 @@ div.row {
   border-color: black;
   border-width: 5px;
   text-align: center;
-  max-height: fit-content;
+  min-height: fit-content;
+  max-width: 300em;
   text-decoration: none;
 }
 /*text under icons*/
@@ -164,4 +165,31 @@ footer{
 .developer_mark{
   color:black;
   float: right;
+}
+
+@media only screen and (max-width: 1200px) {
+  div.intro{
+    display: inline;
+    padding-top: 100em;
+  }
+  p{
+    font-size: medium;
+  }
+  span.name{
+    font-size: large;
+  }
+  h3{
+    font-size: x-large;
+  }
+  .selfimage{
+    text-align: center;
+    padding: 1%;
+    margin: 1%;
+  }
+  .marin{
+    max-width: 25em;
+  }
+  .row{
+    margin-top: 5em;
+  }
 }
