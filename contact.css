@@ -18,46 +18,47 @@ body {
 	}
 }
 .navbar {
-    display: inline;
-    background-color: rgb(31, 31, 111);
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-  }
-  
-  /* Links inside the navbar */
-  .navbar a {
-    float: left;
-    color: #f2f2f2;
-    text-decoration: none;
-  }
-  
-  /* Change background on mouse-over */
-  .navbar a:hover {
-    background: #ddd;
-    color: black;
-  }
+  display: flex;
+  background-color: rgb(31, 31, 111);
+  position: absolute; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  justify-content: space-between;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
 .title{
-  padding-left: 5%;
-  padding-right: 5%;
+padding-left: 5%;
+padding-right: 5%;
 }
 /*banner at the top of the screen*/
 .uoftlink{
-  align-items: center;
-  
+align-items: center;
+
 }
 .uoftdiv{
-  display: block;
-  margin-left: 39%;
-  margin-right: auto;
-  width: 50%;
+display: block;
+margin-left: 39%;
+margin-right: auto;
+width: 50%;
 }
 .uoft{
-  width: 41.3%;
+width: 41.3%;
 }
 .github{
-  padding-left: 10%;
-  padding-right: 9.3%;
+padding-left: 10%;
+padding-right: 9.3%;
 }
 .row{
   font-size: large;

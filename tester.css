@@ -1,36 +1,76 @@
-.banner{
+body {
+	background: linear-gradient(-45deg, #e9e9e9, #d4d4d4, #9a9a9a);
+	background-size: 400% 400%;
+	animation: gradient 8s ease infinite;
+	height: 100vh;
+  font-family:sans-serif;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+  100% {
+		background-position: 0% 50%;
+	}
+}
+.navbar {
     display: flex;
-    justify-content: space-between;
     background-color: rgb(31, 31, 111);
-    width: 100%;
-    height: fit-content;
-}
-.banner a{
-    text-decoration: none;
+    position: absolute; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    justify-content: space-between;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
     color: #f2f2f2;
-}
-.banner a:hover{
+    text-decoration: none;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
     background: #ddd;
     color: black;
+  }
+.title{
+  padding-left: 5%;
+  padding-right: 5%;
 }
-.name {
-    display: flex;
-    text-align: center;
-    padding-left: 5%;
-}
-
-.uoft{
-    width: 30%;
-}
-
+/*banner at the top of the screen*/
 .uoftlink{
-    display: flex;
-    text-align: center;
+  align-items: center;
+  
+}
+.uoftdiv{
+  display: block;
+  margin-left: 39%;
+  margin-right: auto;
+  width: 50%;
+}
+.uoft{
+  width: 41.3%;
 }
 .github{
-    display: flex;
-    text-align: center;
-    padding-right: 5%;
+  padding-left: 10%;
+  padding-right: 9.3%;
 }
-
+.grid{
+    padding-top: 10em;
+    display: grid;
+    grid-auto-flow: row;
+}
+.project{
+    text-align: center;
+}
+@media (min-width: 45em){
+    .grid{
+        grid-auto-flow: column;
+    }
+}
 
